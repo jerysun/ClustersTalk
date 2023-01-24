@@ -32,8 +32,8 @@ You can try to access at the same time those URLs on the address bar of your bro
 http://localhost:8080
 http://localhost:8081
 ```
-## Advance Topics
+## Advanced Topics
 
 Note that the logRecords microservice behaves in case of downtime. If we stop the logRecords server and continue to send messages using the web UI of the clusters-talk application, we will see that when the logRecords server is restarted, it will immediately receive all the messages it missed. 
 
-It is also interesting to see how the microservice approach allows our system to survive even without one of its components - the logRecords service. There would be a temporary reduction of functionality (no log records available) but people would still be able to exchange talk messages in real time!
+It is also interesting to see how the microservice approach allows our system to survive even without one of its components - the logRecords service. There would be a temporary reduction of functionality (no log records available) but servers would still be able to exchange talk messages in real time!

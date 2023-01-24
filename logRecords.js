@@ -8,7 +8,7 @@ async function main() {
    const db = level('./msgRecords')
 
    const connection = await amqp.connect(
-      'amqps://emcnltcw:VCHqcK3UcsuP1RUAXrVgkYeKulnk-KWG@seal.lmq.cloudamqp.com/emcnltcw'
+      'amqps://username:password@seal.lmq.cloudamqp.com/emcnltcw'
    )
    const channel = await connection.createChannel()
    await channel.assertExchange('talk', 'fanout')
